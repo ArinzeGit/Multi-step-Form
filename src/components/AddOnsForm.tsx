@@ -26,6 +26,7 @@ const AddOnsForm = () => {
         <p className="text-[#9699AA] text-[16px] font-['Ubuntu-Regular'] mt-[9px] leading-[1.56]">
           Add-ons help enhance your gaming experience.
         </p>
+
         <div className="relative">
           <input
             type="checkbox"

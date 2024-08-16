@@ -1,9 +1,23 @@
 import { useContext } from "react";
 import { formDataContext } from "../App";
+import validateContactInfo from "../utils/validateContactInfo";
 
 const StepControls = () => {
-  const { steps, currentStepIndex, next, back } = useContext(formDataContext);
+  const { contactInfo, setError, steps, currentStepIndex, next, back } =
+    useContext(formDataContext);
   const length = steps.length;
+
+  function handleValidation() {
+    if (
+      currentStepIndex === 0 &&
+      Object.keys(validateContactInfo(contactInfo)).length !== 0
+    ) {
+      setError(validateContactInfo(contactInfo));
+    } else {
+      setError(validateContactInfo(contactInfo));
+      next();
+    }
+  }
 
   return (
     <div className="fixed bottom-0 bg-white w-[100%] h-[72px]">
@@ -16,6 +30,7 @@ const StepControls = () => {
             Go Back
           </button>
         )}
+
         {currentStepIndex === length - 2 ? (
           <button
             onClick={next}
@@ -25,7 +40,7 @@ const StepControls = () => {
           </button>
         ) : (
           <button
-            onClick={next}
+            onClick={handleValidation}
             className="absolute right-0 top-[50%] translate-y-[-50%] bg-[#022959] text-white text-[14px] font-['Ubuntu-Medium'] w-[97px] h-[40px] rounded-[4px] hover:bg-[#164A8A]"
           >
             Next Step

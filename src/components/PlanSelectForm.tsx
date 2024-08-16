@@ -35,6 +35,7 @@ const PlanSelectForm = () => {
           checked={plan === "Arcade"}
           onChange={handlePlanChange}
         />
+
         <label
           htmlFor="arcade"
           className="block outline outline-[1px] outline-[#D6D9E6] rounded-lg cursor-pointer transition-colors duration-300 peer-checked/arcade:outline-[#483EFF] peer-checked/arcade:bg-[#F8F9FF] hover:outline-[#483EFF] pt-[14px] pb-[18px] pl-[70px] pr-[14px] relative mt-[22px]"
@@ -64,6 +65,7 @@ const PlanSelectForm = () => {
           checked={plan === "Advanced"}
           onChange={handlePlanChange}
         />
+
         <label
           htmlFor="advanced"
           className="block outline outline-[1px] outline-[#D6D9E6] rounded-lg cursor-pointer transition-colors duration-300 peer-checked/advanced:outline-[#483EFF] peer-checked/advanced:bg-[#F8F9FF] hover:outline-[#483EFF] pt-[14px] pb-[18px] pl-[70px] pr-[14px] relative mt-[12px]"
@@ -93,6 +95,7 @@ const PlanSelectForm = () => {
           checked={plan === "Pro"}
           onChange={handlePlanChange}
         />
+
         <label
           htmlFor="pro"
           className="block outline outline-[1px] outline-[#D6D9E6] rounded-lg cursor-pointer transition-colors duration-300 peer-checked/pro:outline-[#483EFF] peer-checked/pro:bg-[#F8F9FF] hover:outline-[#483EFF] pt-[14px] pb-[18px] pl-[70px] pr-[14px] relative mt-[12px]"

@@ -8,13 +8,17 @@ import SummaryPage from "./components/SummaryPage";
 import useMultistepForm from "./utils/useMultistepForm";
 import ThankYouPage from "./components/ThankYouPage";
 
-interface ContextValue {
+interface ContactInfo {
   name: string;
-  setName: Dispatch<SetStateAction<string>>;
   email: string;
-  setEmail: Dispatch<SetStateAction<string>>;
-  phoneNumber: string;
-  setPhoneNumber: Dispatch<SetStateAction<string>>;
+  phone: string;
+}
+
+interface ContextValue {
+  contactInfo: ContactInfo;
+  setContactInfo: Dispatch<SetStateAction<ContactInfo>>;
+  error: Partial<ContactInfo>;
+  setError: Dispatch<SetStateAction<Partial<ContactInfo>>>;
   plan: string;
   setPlan: Dispatch<SetStateAction<string>>;
   billing: string;
@@ -29,12 +33,10 @@ interface ContextValue {
 }
 
 export const formDataContext = createContext<ContextValue>({
-  name: "",
-  setName: () => {},
-  email: "",
-  setEmail: () => {},
-  phoneNumber: "",
-  setPhoneNumber: () => {},
+  contactInfo: { name: "", email: "", phone: "" },
+  setContactInfo: () => {},
+  error: {},
+  setError: () => {},
   plan: "",
   setPlan: () => {},
   billing: "",
@@ -49,9 +51,12 @@ export const formDataContext = createContext<ContextValue>({
 });
 
 const App = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [contactInfo, setContactInfo] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+  const [error, setError] = useState<Partial<ContactInfo>>({});
   const [plan, setPlan] = useState("Arcade"); //make empty string later
   const [billing, setBilling] = useState("Monthly");
   const [selectedAddOns, setSelectedAddOns] = useState<string[]>([]);
@@ -63,16 +68,15 @@ const App = () => {
     <SummaryPage />,
     <ThankYouPage />,
   ]);
+
   return (
     <div className="bg-[#EFF5FF] min-h-[100vh]">
       <formDataContext.Provider
         value={{
-          name,
-          setName,
-          email,
-          setEmail,
-          phoneNumber,
-          setPhoneNumber,
+          contactInfo,
+          setContactInfo,
+          error,
+          setError,
           plan,
           setPlan,
           billing,

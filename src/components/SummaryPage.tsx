@@ -48,6 +48,7 @@ const SummaryPage = () => {
                 Change
               </button>
             </div>
+
             <div className="text-[#022959] text-[14px] font-['Ubuntu-Bold'] leading-[1.43]">
               {`$${planCost}/${billing == "Yearly" ? "yr" : "mo"}`}
             </div>
@@ -59,6 +60,7 @@ const SummaryPage = () => {
                 billing as keyof (typeof addOns)["Online service"]
               ];
             totalCost += addOnCost;
+
             return (
               <div
                 key={addOn}
@@ -67,6 +69,7 @@ const SummaryPage = () => {
                 <div className="text-[#9699AA] text-[14px] font-['Ubuntu-Regular'] leading-[1.43] ">
                   {addOn}
                 </div>
+
                 <div className="text-[#022959] text-[14px] font-['Ubuntu-Regular'] leading-[1.43]">
                   {`+$${addOnCost}/${billing == "Yearly" ? "yr" : "mo"}`}
                 </div>
@@ -79,6 +82,7 @@ const SummaryPage = () => {
           <div className="text-[#9699AA] text-[14px] font-['Ubuntu-Regular'] leading-[1.43] ">
             {`Total (per ${billing == "Yearly" ? "year" : "month"})`}
           </div>
+
           <div className="text-[#483EFF] text-[16px] font-['Ubuntu-Bold'] leading-[1.25]">
             {`$${totalCost}/${billing == "Yearly" ? "yr" : "mo"}`}
           </div>
