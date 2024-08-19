@@ -70,7 +70,7 @@ const App = () => {
   ]);
 
   return (
-    <div className="bg-[#EFF5FF] min-h-[100vh]">
+    <div className="bg-[#EFF5FF] min-h-[100vh] desktop:flex desktop:items-center justify-center">
       <formDataContext.Provider
         value={{
           contactInfo,
@@ -90,10 +90,14 @@ const App = () => {
           goTo,
         }}
       >
-        <SideBar />
-        {step}
-        <div className="h-[144px]"></div>
-        {!(currentStepIndex === steps.length - 1) && <StepControls />}
+        <div className="desktop:min-w-[940px] desktop:flex desktop:py-[16px] desktop:pl-[16px] desktop:bg-[white] desktop:rounded-[15px]">
+          <SideBar />
+          <div className="desktop:w-[650px]">
+            {step}
+            <div className="h-[144px] desktop:h-[36px]"></div>
+            {!(currentStepIndex === steps.length - 1) && <StepControls />}
+          </div>
+        </div>
       </formDataContext.Provider>
     </div>
   );
