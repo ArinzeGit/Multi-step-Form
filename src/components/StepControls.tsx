@@ -25,7 +25,7 @@ const StepControls = () => {
         {!(currentStepIndex === 0) && (
           <button
             onClick={back}
-            className="absolute left-0 top-[50%] translate-y-[-50%] text-[#9699AA] text-[14px] font-['Ubuntu-Medium'] hover:text-[#022959]"
+            className="absolute left-0 top-[50%] translate-y-[-50%] text-[#9699AA] text-[14px] desktop:text-[16px] font-['Ubuntu-Medium'] hover:text-[#022959]"
           >
             Go Back
           </button>
