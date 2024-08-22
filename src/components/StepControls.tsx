@@ -3,8 +3,16 @@ import { formDataContext } from "../App";
 import validateContactInfo from "../utils/validateContactInfo";
 
 const StepControls = () => {
-  const { contactInfo, setError, steps, currentStepIndex, next, back } =
-    useContext(formDataContext);
+  const {
+    contactInfo,
+    setError,
+    isPlanSelected,
+    setPlanError,
+    steps,
+    currentStepIndex,
+    next,
+    back,
+  } = useContext(formDataContext);
   const length = steps.length;
 
   function handleValidation() {
@@ -13,8 +21,11 @@ const StepControls = () => {
       Object.keys(validateContactInfo(contactInfo)).length !== 0
     ) {
       setError(validateContactInfo(contactInfo));
+    } else if (currentStepIndex === 1 && !isPlanSelected) {
+      setPlanError(true);
     } else {
-      setError(validateContactInfo(contactInfo));
+      setError({});
+      setPlanError(false);
       next();
     }
   }

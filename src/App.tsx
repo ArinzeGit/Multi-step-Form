@@ -21,6 +21,10 @@ interface ContextValue {
   setError: Dispatch<SetStateAction<Partial<ContactInfo>>>;
   plan: string;
   setPlan: Dispatch<SetStateAction<string>>;
+  isPlanSelected: boolean;
+  setIsPlanSelected: Dispatch<SetStateAction<boolean>>;
+  planError: boolean;
+  setPlanError: Dispatch<SetStateAction<boolean>>;
   billing: string;
   setBilling: Dispatch<SetStateAction<string>>;
   selectedAddOns: string[];
@@ -39,6 +43,10 @@ export const formDataContext = createContext<ContextValue>({
   setError: () => {},
   plan: "",
   setPlan: () => {},
+  isPlanSelected: false,
+  setIsPlanSelected: () => {},
+  planError: false,
+  setPlanError: () => {},
   billing: "",
   setBilling: () => {},
   selectedAddOns: [],
@@ -57,7 +65,9 @@ const App = () => {
     phone: "",
   });
   const [error, setError] = useState<Partial<ContactInfo>>({});
-  const [plan, setPlan] = useState("Arcade"); //make empty string later
+  const [plan, setPlan] = useState("");
+  const [isPlanSelected, setIsPlanSelected] = useState(false);
+  const [planError, setPlanError] = useState(false);
   const [billing, setBilling] = useState("Monthly");
   const [selectedAddOns, setSelectedAddOns] = useState<string[]>([]);
 
@@ -79,6 +89,10 @@ const App = () => {
           setError,
           plan,
           setPlan,
+          isPlanSelected,
+          setIsPlanSelected,
+          planError,
+          setPlanError,
           billing,
           setBilling,
           selectedAddOns,
