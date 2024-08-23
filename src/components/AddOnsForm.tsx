@@ -65,7 +65,7 @@ const AddOnsForm = () => {
             value="Larger storage"
             onChange={handleAddOnChange}
             checked={selectedAddOns.includes("Larger storage")}
-            className="peer/largerStorage cursor-pointer absolute top-[50%] translate-y-[-50%] left-[16px] desktop:left-[24px] w-[20px] h-[20px] z-[1] appearance-none outline outline-[1px] outline-[#D6D9E6] rounded-[4px] checked:bg-[#483EFF] checked:bg-[url('src/assets/images/icon-checkmark.svg')] checked:bg-no-repeat checked:bg-center checked:outline-[0]"
+            className="peer/largerStorage cursor-pointer absolute top-[50%] translate-y-[-50%] left-[16px] desktop:left-[24px] w-[20px] h-[20px] z-[1] appearance-none outline outline-[1px] outline-[#D6D9E6] rounded-[4px] checked:bg-[#483EFF] checked:bg-[url('/src/assets/images/icon-checkmark.svg')] checked:bg-no-repeat checked:bg-center checked:outline-[0]"
           />
           <label
             htmlFor="largerStorage"
@@ -95,7 +95,7 @@ const AddOnsForm = () => {
             value="Customizable profile"
             onChange={handleAddOnChange}
             checked={selectedAddOns.includes("Customizable profile")}
-            className="peer/customizableProfile cursor-pointer absolute top-[50%] translate-y-[-50%] left-[16px] desktop:left-[24px] w-[20px] h-[20px] z-[1] appearance-none outline outline-[1px] outline-[#D6D9E6] rounded-[4px] checked:bg-[#483EFF] checked:bg-[url('src/assets/images/icon-checkmark.svg')] checked:bg-no-repeat checked:bg-center checked:outline-[0]"
+            className="peer/customizableProfile cursor-pointer absolute top-[50%] translate-y-[-50%] left-[16px] desktop:left-[24px] w-[20px] h-[20px] z-[1] appearance-none outline outline-[1px] outline-[#D6D9E6] rounded-[4px] checked:bg-[#483EFF] checked:bg-[url('/src/assets/images/icon-checkmark.svg')] checked:bg-no-repeat checked:bg-center checked:outline-[0]"
           />
           <label
             htmlFor="customizableProfile"
