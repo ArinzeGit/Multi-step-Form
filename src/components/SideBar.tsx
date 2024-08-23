@@ -12,9 +12,9 @@ const SideBar = () => {
           <p className="text-[#ABBCFF] text-[12px] font-['Ubuntu-Regular'] mb-[4px]">
             STEP 1
           </p>
-          <p className="text-[white] text-[14px] font-['Ubuntu-Bold'] leading-[1.14]">
+          <h1 className="text-[white] text-[14px] font-['Ubuntu-Bold'] leading-[1.14]">
             YOUR INFO
-          </p>
+          </h1>
         </div>
       </div>
       <div className="desktop:mb-[32px] desktop:flex desktop:gap-[16px] desktop:items-center">

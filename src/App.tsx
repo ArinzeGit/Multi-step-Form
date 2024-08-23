@@ -80,7 +80,7 @@ const App = () => {
   ]);
 
   return (
-    <div className="bg-[#EFF5FF] min-h-[100vh] desktop:flex desktop:items-center justify-center desktop:py-[50px]">
+    <main className="bg-[#EFF5FF] min-h-[100vh] desktop:flex desktop:items-center justify-center desktop:py-[50px]">
       <formDataContext.Provider
         value={{
           contactInfo,
@@ -113,7 +113,7 @@ const App = () => {
           </div>
         </div>
       </formDataContext.Provider>
-    </div>
+    </main>
   );
 };
 
