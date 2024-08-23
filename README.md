@@ -68,37 +68,41 @@ Users should be able to:
 
 - I learned Tailwind CSS framework with this project. I saw how Tailwind is used to write styles for elements, pseudo states and media queries. Tailwind writes inline styles which some developers argue makes HTML code long and messy. I, however found it very suited for frameworks like React since each component has it's separate module where you can style once and reuse the component.
 
--I learned a very peciliar feature of Tailwind which is the ability to style an element based on the state of a sibling element. This helped me apply conditional styles to elements without using JavaScript. In code snippet below I apply conditional styles on a label depending on wether it's invisible input checkbox is checked.
+- I learned a very peciliar feature of Tailwind which is the ability to style an element based on the state of a sibling element. This helped me apply conditional styles to elements without using JavaScript. In code snippet below I apply conditional styles on a label depending on wether it's invisible input checkbox is checked.
 
 ```js
-<input
-    type="radio"
-    id="arcade"
-    name="plan"
-    value="Arcade"
-    className="hidden peer/arcade"
-    checked={plan === "Arcade"}
-    onChange={handlePlanChange}
-/>
-<label
-    htmlFor="arcade"
-    className="block outline outline-[1px] outline-[#D6D9E6] rounded-lg cursor-pointer transition-colors duration-300 peer-checked/arcade:outline-[#483EFF] peer-checked/arcade:bg-[#F8F9FF] hover:outline-[#483EFF] pt-[14px] desktop:pt-[99px] pb-[15px] desktop:pb-[14px] pl-[70px] desktop:px-[16px] pr-[14px] relative mt-[22px] desktop:mt-0 desktop:flex-[1_1_100%]"
->
-<img
-    src={arcade}
-    alt="arcade"
-    className="absolute top-[17px] desktop:top-[20px] left-[16px] desktop:left-[16px]"
-/>
-<div className="text-[#022959] text-[16px] font-['Ubuntu-Medium'] leading-[1.125]">
-    Arcade
-</div>
-<div className="text-[#9699AA] text-[14px] font-['Ubuntu-Regular'] mt-[7px] mb-[3px] desktop:mb-[6px] leading-[1.429] desktop:leading-[1.143]">
-    {billing === "Yearly" ? "$90/yr" : "$9/mo"}
-</div>
-<div className="text-[#022959] text-[12px] font-['Ubuntu-Regular'] leading-[1.83] desktop:leading-[1.9]">
-    {billing === "Yearly" && "2 months free"}
-</div>
-</label>
+return (
+  <>
+    <input
+      type="radio"
+      id="arcade"
+      name="plan"
+      value="Arcade"
+      className="hidden peer/arcade"
+      checked={plan === "Arcade"}
+      onChange={handlePlanChange}
+    />
+    <label
+      htmlFor="arcade"
+      className="block outline outline-[1px] outline-[#D6D9E6] rounded-lg cursor-pointer transition-colors duration-300 peer-checked/arcade:outline-[#483EFF] peer-checked/arcade:bg-[#F8F9FF] hover:outline-[#483EFF] pt-[14px] desktop:pt-[99px] pb-[15px] desktop:pb-[14px] pl-[70px] desktop:px-[16px] pr-[14px] relative mt-[22px] desktop:mt-0 desktop:flex-[1_1_100%]"
+    >
+      <img
+        src={arcade}
+        alt="arcade"
+        className="absolute top-[17px] desktop:top-[20px] left-[16px] desktop:left-[16px]"
+      />
+      <div className="text-[#022959] text-[16px] font-['Ubuntu-Medium'] leading-[1.125]">
+        Arcade
+      </div>
+      <div className="text-[#9699AA] text-[14px] font-['Ubuntu-Regular'] mt-[7px] mb-[3px] desktop:mb-[6px] leading-[1.429] desktop:leading-[1.143]">
+        {billing === "Yearly" ? "$90/yr" : "$9/mo"}
+      </div>
+      <div className="text-[#022959] text-[12px] font-['Ubuntu-Regular'] leading-[1.83] desktop:leading-[1.9]">
+        {billing === "Yearly" && "2 months free"}
+      </div>
+    </label>
+  </>
+);
 ```
 
 - I learned how to create and use React custom hooks. I used a custom hook to implement step control for the multi-step form. See the code snippet below
@@ -150,8 +154,8 @@ I found these techniques very useful. I will continue focusing on them in future
 
 ### Useful resources
 
-- [Multistep Form Custom Hook With React And TypeScript](https://www.youtube.com/watch?v=uDCBSnWkuH0&list=WL&index=14&pp=gAQBiAQB) - This YouTube tutorial helped me understand form control using React custom hooks.
 - [Watching Tailwind Tutorials Is A Waste Of Time](https://www.youtube.com/watch?v=Ksn1tThNTjI&t=120s&pp=ygUfdGFpbHdpbmQgY3NzIHdlYiBkZXYgc2ltcGxpZmllZA%3D%3D) - This YouTube tutorial helped me quickly get started with Tailwind CSS.
+- [Multistep Form Custom Hook With React And TypeScript](https://www.youtube.com/watch?v=uDCBSnWkuH0&list=WL&index=14&pp=gAQBiAQB) - This YouTube tutorial helped me understand form control using React custom hooks.
 
 ## Author
 
