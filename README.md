@@ -47,8 +47,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: View the GitHub repository [here](https://github.com/ArinzeGit/Multi-step-Form)
-- Live Site URL: I have hosted the project on GitHub Pages [here](https://arinzegit.github.io/Multi-step-Form/)
+- [GitHub Repository](https://github.com/ArinzeGit/Multi-step-Form)
+- [Live Site URL](https://arinzegit.github.io/Multi-step-Form/)
 
 ## My process
 
