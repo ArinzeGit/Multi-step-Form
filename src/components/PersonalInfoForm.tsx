@@ -45,7 +45,7 @@ const PersonalInfoForm = () => {
           placeholder="e.g. Stephen King"
           className={`outline outline-1 ${
             error.name ? "outline-[#d33e4c]" : "outline-[#D6D9E6]"
-          } focus:outline-[#483EFF] text-[#9699AA] text-[15px] font-['Ubuntu-Medium'] leading-[1.56] px-[16px] h-[40px] desktop:h-[48px] block rounded-[4px] w-[100%]`}
+          } focus:outline-[#483EFF] text-[#022959] placeholder:text-[#9699AA] text-[15px] font-['Ubuntu-Medium'] leading-[1.56] px-[16px] h-[40px] desktop:h-[48px] block rounded-[4px] w-[100%]`}
         />
 
         <div className="mt-[16px] desktop:mt-[24px] mb-[3px] desktop:mb-[8px] flex justify-between">
@@ -71,7 +71,7 @@ const PersonalInfoForm = () => {
           placeholder="e.g. stephenking@lorem.com"
           className={`outline outline-1 ${
             error.email ? "outline-[#d33e4c]" : "outline-[#D6D9E6]"
-          } focus:outline-[#483EFF] text-[#9699AA] text-[15px] font-['Ubuntu-Medium'] leading-[1.56] px-[16px] h-[40px] desktop:h-[48px] block rounded-[4px] w-[100%]`}
+          } focus:outline-[#483EFF] text-[#022959] placeholder:text-[#9699AA] text-[15px] font-['Ubuntu-Medium'] leading-[1.56] px-[16px] h-[40px] desktop:h-[48px] block rounded-[4px] w-[100%]`}
         />
 
         <div className="mt-[16px] desktop:mt-[24px] mb-[3px] desktop:mb-[8px] flex justify-between">
@@ -97,7 +97,7 @@ const PersonalInfoForm = () => {
           placeholder="e.g. +1 234 567 890"
           className={`outline outline-1 ${
             error.phone ? "outline-[#d33e4c]" : "outline-[#D6D9E6]"
-          } focus:outline-[#483EFF] text-[#9699AA] text-[15px] font-['Ubuntu-Medium'] leading-[1.56] px-[16px] h-[40px] desktop:h-[48px] block rounded-[4px] w-[100%]`}
+          } focus:outline-[#483EFF] text-[#022959] placeholder:text-[#9699AA] text-[15px] font-['Ubuntu-Medium'] leading-[1.56] px-[16px] h-[40px] desktop:h-[48px] block rounded-[4px] w-[100%]`}
         />
       </div>
     </div>

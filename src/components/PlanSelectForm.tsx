@@ -17,6 +17,10 @@ const PlanSelectForm = () => {
     setBilling(event.target.value);
   };
 
+  const toggleBiling = () => {
+    billing === "Monthly" ? setBilling("Yearly") : setBilling("Monthly");
+  };
+
   return (
     <div className=" w-[min(91.5%,400px)] desktop:w-[100%] mx-auto mt-[-73px] desktop:mt-[0px] relative bg-white py-[32px] desktop:py-[40px] shadow-[0_25px_40px_-20px_rgba(0,0,0,0.095)] desktop:shadow-[none] rounded-[10px]">
       <div className="w-[86%] desktop:w-[450px] mx-auto relative">
@@ -148,8 +152,14 @@ const PlanSelectForm = () => {
             Monthly
           </label>
 
-          <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[38px] h-[20px] bg-[#022959] rounded-full"></div>
-          <div className="absolute top-[50%] left-[50%] peer-checked/monthly:translate-x-[-15px] translate-y-[-50%] h-[12px] w-[12px] bg-white rounded-full transform transition-transform duration-300 peer-checked/Yearly:translate-x-[3px]"></div>
+          <button
+            onClick={toggleBiling}
+            className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[38px] h-[20px] bg-[#022959] rounded-full"
+          ></button>
+          <button
+            onClick={toggleBiling}
+            className="absolute top-[50%] left-[50%] peer-checked/monthly:translate-x-[-15px] translate-y-[-50%] h-[12px] w-[12px] bg-white rounded-full transform transition-transform duration-300 peer-checked/Yearly:translate-x-[3px]"
+          ></button>
 
           <label
             htmlFor="Yearly"

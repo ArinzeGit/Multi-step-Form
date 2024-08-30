@@ -80,40 +80,63 @@ const App = () => {
   ]);
 
   return (
-    <main className="bg-[#EFF5FF] min-h-[100vh] desktop:flex desktop:items-center justify-center desktop:py-[50px]">
-      <formDataContext.Provider
-        value={{
-          contactInfo,
-          setContactInfo,
-          error,
-          setError,
-          plan,
-          setPlan,
-          isPlanSelected,
-          setIsPlanSelected,
-          planError,
-          setPlanError,
-          billing,
-          setBilling,
-          selectedAddOns,
-          setSelectedAddOns,
-          steps,
-          currentStepIndex,
-          next,
-          back,
-          goTo,
-        }}
-      >
-        <div className="desktop:min-w-[940px] desktop:flex desktop:py-[16px] desktop:pl-[16px] desktop:bg-[white] desktop:rounded-[15px]">
-          <SideBar />
-          <div className="desktop:w-[650px] desktop:flex desktop:flex-col justify-between">
-            {step}
-            <div className="h-[144px] desktop:h-[0]"></div>
-            {!(currentStepIndex === steps.length - 1) && <StepControls />}
+    <>
+      <main className="bg-[#EFF5FF] min-h-[100vh] desktop:flex desktop:items-center desktop:justify-center desktop:py-[150px]">
+        <formDataContext.Provider
+          value={{
+            contactInfo,
+            setContactInfo,
+            error,
+            setError,
+            plan,
+            setPlan,
+            isPlanSelected,
+            setIsPlanSelected,
+            planError,
+            setPlanError,
+            billing,
+            setBilling,
+            selectedAddOns,
+            setSelectedAddOns,
+            steps,
+            currentStepIndex,
+            next,
+            back,
+            goTo,
+          }}
+        >
+          <div className="desktop:min-w-[940px] desktop:flex desktop:py-[16px] desktop:pl-[16px] desktop:bg-[white] desktop:rounded-[15px]">
+            <SideBar />
+            <div className="desktop:w-[650px] desktop:flex desktop:flex-col justify-between">
+              {step}
+              <div className="h-[144px] desktop:h-[0]"></div>
+              {!(currentStepIndex === steps.length - 1) && <StepControls />}
+            </div>
           </div>
+        </formDataContext.Provider>
+      </main>
+      <footer className="relative">
+        <div className="text-[11px] absolute bottom-[6rem] left-[50%] transform translate-x-[-50%] text-[#D45526] ">
+          Challenge by{" "}
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            className="text-[#3388FF] hover:underline"
+          >
+            Frontend Mentor
+          </a>
+          . Coded by{" "}
+          <a
+            href="https://github.com/ArinzeGit"
+            target="_blank"
+            className="text-[#3388FF] hover:underline"
+          >
+            Arinze Owoh
+          </a>
+          .
         </div>
-      </formDataContext.Provider>
-    </main>
+      </footer>
+    </>
   );
 };
 
