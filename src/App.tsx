@@ -81,7 +81,7 @@ const App = () => {
 
   return (
     <>
-      <main className="bg-[#EFF5FF] min-h-[100vh] desktop:flex desktop:items-center desktop:justify-center desktop:py-[150px]">
+      <main className="bg-[#EFF5FF] min-h-[100vh] desktop:flex desktop:items-center desktop:justify-center desktop:py-[100px]">
         <formDataContext.Provider
           value={{
             contactInfo,
@@ -116,7 +116,7 @@ const App = () => {
         </formDataContext.Provider>
       </main>
       <footer className="relative">
-        <div className="text-[11px] absolute bottom-[6rem] left-[50%] transform translate-x-[-50%] text-[#D45526] ">
+        <div className="text-[11px] absolute bottom-[80px] left-[50%] transform translate-x-[-50%] text-[#D45526] ">
           Challenge by{" "}
           <a
             href="https://www.frontendmentor.io?ref=challenge"
