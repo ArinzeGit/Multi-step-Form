@@ -10,13 +10,17 @@ const SummaryPage = () => {
     Pro: { Monthly: 15, Yearly: 150 },
   };
 
-  const planCost =
-    plans[plan as keyof typeof plans][
-      billing as keyof (typeof plans)["Arcade"]
-    ]; //the "as keyof typeof" tell typescript all the possible values of plan and billing so that it is sure they will be valid indexes
-
   let totalCost = 0;
-  totalCost += planCost;
+  let planCost = 0;
+
+  if (plan) {
+    planCost =
+      plans[plan as keyof typeof plans][
+        billing as keyof (typeof plans)["Arcade"]
+      ]; //the "as keyof typeof" tell typescript all the possible values of plan and billing so that it is sure they will be valid indexes
+
+    totalCost += planCost;
+  }
 
   const addOns = {
     "Online service": { Monthly: 1, Yearly: 10 },

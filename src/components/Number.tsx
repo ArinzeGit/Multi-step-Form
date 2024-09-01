@@ -1,10 +1,11 @@
 interface Props {
   number: string;
-  highlighted: boolean;
+  highlighted?: boolean;
 }
-const Number = ({ number, highlighted }: Props) => {
+const Number = ({ number, highlighted = false }: Props) => {
   return (
     <div
+      data-testid="numberComponent"
       className={`inline-block  h-[33px] w-[33px]  ${
         highlighted ? "bg-[#BEE2FD]" : "border border-white"
       } rounded-[16.5px] relative`}
