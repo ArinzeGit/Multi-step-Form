@@ -5,7 +5,10 @@ import { formDataContext } from "../App";
 const SideBar = () => {
   const { currentStepIndex } = useContext(formDataContext);
   return (
-    <div className="bg-[url('/src/assets/images/bg-sidebar-mobile.svg')] desktop:bg-[url('/src/assets/images/bg-sidebar-desktop.svg')] min-h-[172px] desktop:min-h-[568px] desktop:w-[274px] bg-cover bg-no-repeat bg-center pt-8 flex justify-center gap-4 desktop:block desktop:px-[32px] desktop:py-[40px] desktop:rounded-[10px]">
+    <div
+      data-testid="sideBarComponent"
+      className="bg-[url('/src/assets/images/bg-sidebar-mobile.svg')] desktop:bg-[url('/src/assets/images/bg-sidebar-desktop.svg')] min-h-[172px] desktop:min-h-[568px] desktop:w-[274px] bg-cover bg-no-repeat bg-center pt-8 flex justify-center gap-4 desktop:block desktop:px-[32px] desktop:py-[40px] desktop:rounded-[10px]"
+    >
       <div className="desktop:mb-[32px] desktop:flex desktop:gap-[16px] desktop:items-center">
         <Number number="1" highlighted={currentStepIndex === 0} />
         <div className="hidden desktop:block">

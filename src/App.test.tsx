@@ -2,9 +2,10 @@ import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 describe("App component", () => {
-  it('contains button with the text "next"', () => {
+  it("renders all expected components", () => {
     render(<App />);
-    const nextButton = screen.getByRole("button", { name: /next/i });
-    expect(nextButton).toBeInTheDocument();
+    expect(screen.getByTestId("sideBarComponent")).toBeInTheDocument;
+    expect(screen.getByTestId("stepControlsComponent")).toBeInTheDocument;
+    expect(screen.getByTestId("personalInfoFormComponent")).toBeInTheDocument;
   });
 });

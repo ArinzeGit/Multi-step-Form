@@ -31,7 +31,10 @@ const StepControls = () => {
   }
 
   return (
-    <div className="fixed bottom-0 bg-white w-[100%] h-[72px] desktop:h-[80px] desktop:static">
+    <div
+      data-testid="stepControlsComponent"
+      className="fixed bottom-0 bg-white w-[100%] h-[72px] desktop:h-[80px] desktop:static"
+    >
       <div className="w-[min(91.5%,400px)] desktop:w-[450px] h-[100%] mx-auto relative">
         {!(currentStepIndex === 0) && (
           <button
