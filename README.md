@@ -61,6 +61,7 @@ Users should be able to:
 - [TypeScript](https://www.typescriptlang.org/) - Programming language that extends JavaScript
 - [React](https://react.dev/) - JavaScript library
 - React custom hook for step control
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and Vitest for testing
 - [Node.js](https://nodejs.org/) - JavaScript runtime environment
 - [Vite](https://vitejs.dev/) - React build tool with local development server
 
