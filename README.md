@@ -152,13 +152,18 @@ export default useMultistepForm;
 - Tailwind CSS
 - Tailwind styling based on sibling state (peer-{modifier})
 - React custom hooks
+- Vitest
+- React Testing Library
 
 I found these techniques very useful. I will continue focusing on them in future projects to refine and perfect them.
 
 ### Useful resources
 
-- [Watching Tailwind Tutorials Is A Waste Of Time](https://www.youtube.com/watch?v=Ksn1tThNTjI&t=120s&pp=ygUfdGFpbHdpbmQgY3NzIHdlYiBkZXYgc2ltcGxpZmllZA%3D%3D) - This YouTube tutorial helped me quickly get started with Tailwind CSS.
-- [Multistep Form Custom Hook With React And TypeScript](https://www.youtube.com/watch?v=uDCBSnWkuH0&list=WL&index=14&pp=gAQBiAQB) - This YouTube tutorial helped me understand form control using React custom hooks.
+- [Watching Tailwind Tutorials Is A Waste Of Time](https://www.youtube.com/watch?v=Ksn1tThNTjI&t=120s&pp=ygUfdGFpbHdpbmQgY3NzIHdlYiBkZXYgc2ltcGxpZmllZA%3D%3D) - This YouTube tutorial helped me quickly get started with `Tailwind CSS`.
+- [Multistep Form Custom Hook With React And TypeScript](https://www.youtube.com/watch?v=uDCBSnWkuH0&list=WL&index=14&pp=gAQBiAQB) - This YouTube tutorial helped me understand form/step control using `React custom hooks`.
+- [Why Vitest Is Better Than Jest](https://www.youtube.com/watch?v=7f-71kYhK00) - This YouTube tutorial helped me transition from `Jest` to `Vitest`
+- [Stop Writing So Many Tests](https://www.youtube.com/watch?v=4-_0aTlkqK0) - This YouTube tutorial helped me improve the efficiency of my tests
+- [100% Code Coverage Is Useless](https://www.youtube.com/watch?v=Zs2IpqHzchw) - This YouTube tutorial helped me shift my focus from code coverage to code confidence in testing.
 
 ## Author
 
