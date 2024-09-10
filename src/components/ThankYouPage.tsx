@@ -2,7 +2,10 @@ import thankYOu from "../assets/images/icon-thank-you.svg";
 
 const ThankYouPage = () => {
   return (
-    <div className="w-[min(91.5%,400px)] desktop:w-[100%] mx-auto mt-[-73px] desktop:mt-[0px] relative bg-white py-[79px] desktop:py-[165px] shadow-[0_25px_40px_-20px_rgba(0,0,0,0.095)] desktop:shadow-[none] rounded-[10px]">
+    <div
+      data-testid="thankYouPageComponent"
+      className="w-[min(91.5%,400px)] desktop:w-[100%] mx-auto mt-[-73px] desktop:mt-[0px] relative bg-white py-[79px] desktop:py-[165px] shadow-[0_25px_40px_-20px_rgba(0,0,0,0.095)] desktop:shadow-[none] rounded-[10px]"
+    >
       <div className="w-[86%] desktop:w-[450px] mx-auto text-center">
         <img
           className="inline-block w-[56px] desktop:w-[80px] h-[56px] desktop:h-[80px]"

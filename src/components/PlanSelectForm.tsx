@@ -22,7 +22,10 @@ const PlanSelectForm = () => {
   };
 
   return (
-    <div className=" w-[min(91.5%,400px)] desktop:w-[100%] mx-auto mt-[-73px] desktop:mt-[0px] relative bg-white py-[32px] desktop:py-[40px] shadow-[0_25px_40px_-20px_rgba(0,0,0,0.095)] desktop:shadow-[none] rounded-[10px]">
+    <div
+      data-testid="planSelectFormComponent"
+      className=" w-[min(91.5%,400px)] desktop:w-[100%] mx-auto mt-[-73px] desktop:mt-[0px] relative bg-white py-[32px] desktop:py-[40px] shadow-[0_25px_40px_-20px_rgba(0,0,0,0.095)] desktop:shadow-[none] rounded-[10px]"
+    >
       <div className="w-[86%] desktop:w-[450px] mx-auto relative">
         {planError && (
           <p className="absolute text-[#d33e4c] text-[12px] desktop:text-[14px] desktop:leading-[1.14] font-['Ubuntu-Bold'] top-[90px] desktop:top-[85px]">

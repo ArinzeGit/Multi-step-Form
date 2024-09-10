@@ -29,7 +29,10 @@ const SummaryPage = () => {
   };
 
   return (
-    <div className=" w-[min(91.5%,400px)] desktop:w-[100%] mx-auto mt-[-73px] desktop:mt-[0px] relative bg-white py-[32px] desktop:py-[40px] shadow-[0_25px_40px_-20px_rgba(0,0,0,0.095)] desktop:shadow-[none] rounded-[10px]">
+    <div
+      data-testid="summaryPageComponent"
+      className=" w-[min(91.5%,400px)] desktop:w-[100%] mx-auto mt-[-73px] desktop:mt-[0px] relative bg-white py-[32px] desktop:py-[40px] shadow-[0_25px_40px_-20px_rgba(0,0,0,0.095)] desktop:shadow-[none] rounded-[10px]"
+    >
       <div className="w-[86%] desktop:w-[450px] mx-auto">
         <p className="text-[#022959] text-[24px] desktop:text-[32px] font-['Ubuntu-Bold'] desktop:leading-[1.16]">
           Finishing up
