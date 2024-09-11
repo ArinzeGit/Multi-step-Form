@@ -67,6 +67,8 @@ Users should be able to:
 
 ### What I learned
 
+- I strengthened my knowledge of `testing` as this projects includes `integration tests` and not just `unit tests`. However, in this project, I made the switch from `Jest` to `Vitest`, which integrates more seamlessly with my `Vite` bundler. This change allowed me to optimize the testing workflow and take advantage of Vitest's faster performance and compatibility with modern front-end tools.
+
 - I learned `Tailwind CSS` framework with this project. I saw how Tailwind is used to write styles for elements, pseudo states and media queries. Tailwind writes inline styles which some developers argue makes HTML code long and messy. I, however found it very suited for frameworks like React since each component has it's separate module where you can style once and reuse the component.
 
 - I learned a very peciliar feature of `Tailwind`; the `peer` feature, which is the ability to style an element based on the state of a sibling element. This helped me apply conditional styles to elements without using JavaScript. In code snippet below I apply conditional styles on a label depending on wether it's invisible input checkbox is checked.
@@ -145,8 +147,6 @@ const useMultistepForm = (steps: React.ReactElement[]) => {
 export default useMultistepForm;
 ```
 
-- I strengthened my knowledge of `testing`. However, in this project, I made the switch from `Jest` to `Vitest`, which integrates more seamlessly with my `Vite` bundler. This change allowed me to optimize the testing workflow and take advantage of Vitest's faster performance and compatibility with modern front-end tools.
-
 ### Continued development
 
 - Tailwind CSS
@@ -154,6 +154,7 @@ export default useMultistepForm;
 - React custom hooks
 - Vitest
 - React Testing Library
+- Unit testing and Integration testing
 
 I found these techniques very useful. I will continue focusing on them in future projects to refine and perfect them.
 
