@@ -1,6 +1,6 @@
 # Multi-step Form
 
-This project is a multi-step form built with `React-TS`, utilizing `custom hooks` for step management and control. The form is styled using `Tailwind CSS` for a responsive and modern look. I wrote `unit tests` and `integration tests` using `Vitest` and `React Testing Library (RTL)` to ensure the functionality and reliability of each step in the form process. This project demonstrates my skills in building complex user interfaces, managing component state effectively with custom hooks, and writing meaningful tests to ensure quality. I got the design from the ['Multi-step form' challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ).
+This project is a multi-step form built with `React-TS`, utilizing `custom hooks` for step management and control. I wrote `unit tests` and `integration tests` using `Vitest` and `React Testing Library (RTL)` to ensure the functionality and reliability of each step in the form process. The form is styled using `Tailwind CSS` for a responsive and modern look. This project demonstrates my skills in building complex user interfaces, managing component state effectively with custom hooks, and writing meaningful tests to ensure quality. I got the design from the ['Multi-step form' challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ).
 
 ## Table of contents
 
